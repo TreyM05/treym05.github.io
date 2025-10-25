@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+</style>
+<title>Trey Miller</title>
+</head>
+<body>
+  <h1>Trey's 2025 Christmas List!</h1>
+  
+  <p>
+   Hello all! I have built this web site to help you shop for me this holiday season! 
+   Here you will find a list of items unique to each person. Simply select who you are
+   in relation to me and you will be given your shopping list! Each item within the list
+   has it's price next to it and is hyper-linked (this means its blue, old heads) and will take you
+   to where to buy the item. If the item has additional information that is need (i.e. size, color, or whatnot)
+   it will be included beneath the item.
+  </p>
+  
+  <p>
+  <img src="santa.png" alt="An image of me" width="200" height="150"/> shhhhh... santa's coming!
+  </p>
+  
+  <h2>
+    What is your relation to the gift that keeps on giving?
+  </h2>
+  
+    <label><input type="radio" name="relation" value="mother.html"> Mother</label>
+    <label><input type="radio" name="relation" value="father.html"> Father</label>
+    
+   <div id="result"></div>
+
+  <script>
+  const radioName = "relation"; // use the 'name' attribute shared by your radios
+  
+  document.querySelectorAll(`input[name="${radioName}"]`).forEach(radio => {
+      radio.addEventListener("change", () => {
+
+        // Redirect to the chosen page
+        window.location.href = radio.value;
+      });
+    });
+
+  </script>
+  
+  
+</body>
+</html>

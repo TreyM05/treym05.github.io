@@ -20,6 +20,12 @@
         vertical-align: middle;
     }
 
+    .big-checkbox {
+        transform: scale(1.7); /* Increase size */
+        -webkit-transform: scale(1.7); /* Safari */
+        margin: 10px;
+      }
+
 </style>
 <title>Trey Miller</title>
 </head>
@@ -41,24 +47,24 @@
         <td> <img src="cardigan.png" style="width:150px;height:150px;"></img></td>
         <td>$90</td>
         <td>Size: <a style="color: firebrick;">Small</a> | Color: <a style="color: darkgreen;">Dark Blue</a></td>
-        <td><input type="checkbox" id="item1"></td>
+        <td><input type="checkbox" class ="big-checkbox" id="item1"></td>
     </tr>
     <tr style="font-family: Apple; font-size:125%;">
         <td>2. <a href="https://www.abercrombie.com/shop/us/p/essential-cropped-full-zip-hoodie-57732341?categoryId=12202&faceout=model&seq=27&pagefm=navigation-grid&prodvm=navigation-grid">Cropped Zip Hoodie</a></td>
         <td> <img src="brown jacket.png" style="width:180px;height:180px;"></img></td>
         <td>$90</td>
         <td>Size: <a style="color: firebrick;">Small</a> | Color: <a style="color: darkgreen;">Brown Wash</a></td>
-        <td><input type="checkbox" id="item2"></td>
+        <td><input type="checkbox" class ="big-checkbox" id="item2"></td>
     </tr>
     <tr style="font-family: Apple; font-size:125%;">
         <td>2. <a href="https://www.abercrombie.com/shop/us/p/collared-3-button-sweater-61008368?categoryId=12202&faceout=life&seq=02&pagefm=navigation-grid&prodvm=navigation-grid">3-Button Sweater</a></td>
         <td> <img src="sweater.png" style="width:200px;height:180px;"></img></td>
         <td>$80</td>
         <td>Size: <a style="color: firebrick;">Small</a> | Color: <a style="color: darkgreen;">Gray</a></td>
-        <td><input type="checkbox" id="item3"></td>
+        <td><input type="checkbox" class ="big-checkbox" id="item3"></td>
     </tr>
   </table>
-  
+
   <script>
     // IDs of all the inputs we want to persist
     const fields = ["item1", "item2", "item3"];

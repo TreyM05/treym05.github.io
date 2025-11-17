@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<style type="text/css">
+    @font-face { font-family: LastChristmas; src: url('LastChristmas.otf'); } 
+    @font-face { font-family: Apple; src: url('ITCBenguiatStdMediumCn.OTF'); }
+    
+    
+    table {
+        border-collapse: separate;  /* required for border-spacing to work */
+        border-spacing: 40px 10px;  /* horizontal vertical spacing */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    th, td {
+        text-align: center;
+        vertical-align: middle;
+    }
+
+</style>
+<title>Trey Miller</title>
+</head>
+<body>
+  <h1 style="color: firebrick; text-align:center; font-family: LastChristmas; font-size: 500%;">Mother</h1>
+  <h1 style="text-align: center; color: darkred; font-family: Apple;">This list is ordered by preference (the higher, the more i want it)</h1>
+  
+  <table>
+    <tr style="color: darkgreen; font-family: Apple; font-size:170%;">
+        <th>Item    </th>
+        <th>Image Of Item    </th>
+        <th>Cost    </th>
+        <th>Additional Info    </th>
+        <th>Bought?</th>
+    </tr>
+    
+    <tr style="font-family: Apple; font-size:125%;">
+        <td>1. <a href="https://www.abercrombie.com/shop/us/p/boucle-cardigan-61412332?categoryId=12202&faceout=life&seq=03&pagefm=navigation-grid&prodvm=navigation-grid">Boucle Cardigan</a></td>
+        <td> <img src="cardigan.png" style="width:150px;height:150px;"></img></td>
+        <td>$90</td>
+        <td>Size: <a style="color: firebrick;">Small</a> | Color: <a style="color: darkgreen;">Dark Blue</a></td>
+        <td><input type="checkbox" id="item1"></td>
+    </tr>
+    <tr style="font-family: Apple; font-size:125%;">
+        <td>2. <a href="https://www.abercrombie.com/shop/us/p/essential-cropped-full-zip-hoodie-57732341?categoryId=12202&faceout=model&seq=27&pagefm=navigation-grid&prodvm=navigation-grid">Cropped Zip Hoodie</a></td>
+        <td> <img src="brown jacket.png" style="width:180px;height:180px;"></img></td>
+        <td>$90</td>
+        <td>Size: <a style="color: firebrick;">Small</a> | Color: <a style="color: darkgreen;">Brown Wash</a></td>
+        <td><input type="checkbox" id="item2"></td>
+    </tr>
+    <tr style="font-family: Apple; font-size:125%;">
+        <td>2. <a href="https://www.abercrombie.com/shop/us/p/collared-3-button-sweater-61008368?categoryId=12202&faceout=life&seq=02&pagefm=navigation-grid&prodvm=navigation-grid">3-Button Sweater</a></td>
+        <td> <img src="sweater.png" style="width:200px;height:180px;"></img></td>
+        <td>$80</td>
+        <td>Size: <a style="color: firebrick;">Small</a> | Color: <a style="color: darkgreen;">Gray</a></td>
+        <td><input type="checkbox" id="item3"></td>
+    </tr>
+  </table>
+  
+  <script>
+    // IDs of all the inputs we want to persist
+    const fields = ["item1", "item2", "item3"];
+
+    // Load saved values
+    window.addEventListener("DOMContentLoaded", () => {
+      fields.forEach(id => {
+        const el = document.getElementById(id);
+        const saved = localStorage.getItem(id);
+
+        if (el.type === "checkbox") {
+          el.checked = saved === "true";
+        } else if (saved !== null) {
+          el.value = saved;
+        }
+      });
+    });
+
+    // Save on change
+    fields.forEach(id => {
+      const el = document.getElementById(id);
+      el.addEventListener("input", () => {
+        if (el.type === "checkbox") {
+          localStorage.setItem(id, el.checked);
+        } else {
+          localStorage.setItem(id, el.value);
+        }
+      });
+    });
+  </script>
+  
+  
+</body>
+</html>

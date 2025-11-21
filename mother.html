@@ -6,7 +6,10 @@
 <style type="text/css">
     @font-face { font-family: LastChristmas; src: url('LastChristmas.otf'); } 
     @font-face { font-family: Apple; src: url('ITCBenguiatStdMediumCn.OTF'); }
-    
+
+    body {
+        background-color: rgba(90, 148, 94, 0.16);
+    }
     
     table {
         border-collapse: separate;  /* required for border-spacing to work */
@@ -31,10 +34,9 @@
 </head>
 <body>
   <h1 style="color: firebrick; text-align:center; font-family: LastChristmas; font-size: 500%;">Mother</h1>
-  <h1 style="text-align: center; color: darkred; font-family: Apple;">This list is ordered by preference (the higher, the more i want it)</h1>
   
   <table>
-    <tr style="color: darkgreen; font-family: Apple; font-size:170%;">
+    <tr style="text-decoration: underline; color: darkgreen; font-family: Apple; font-size:170%;">
         <th>Item    </th>
         <th>Image Of Item    </th>
         <th>Cost    </th>
@@ -58,14 +60,14 @@
     </tr>
     <tr style="font-family: Apple; font-size:125%;">
         <td>3. <a href="https://www.abercrombie.com/shop/us/p/collared-3-button-sweater-61008368?categoryId=12202&faceout=life&seq=02&pagefm=navigation-grid&prodvm=navigation-grid">3-Button Sweater</a></td>
-        <td> <img src="sweater.png" style="width:200px;height:180px;"></img></td>
+        <td> <img src="sweater.png" style="width:230px;height:190px;"></img></td>
         <td>$80</td>
         <td>Size: <a style="color: firebrick;">Small</a> | Color: <a style="color: darkgreen;">Gray</a></td>
         <td><input type="checkbox" class ="big-checkbox" id="item3"></td>
     </tr>
       <tr style="font-family: Apple; font-size:125%;">
           <td>4. <a href="https://www.ray-ban.com/usa/eyeglasses/RX3447Vround%20metal%20optics-matte%20havana%20on%20matte%20silver/7895653330344">Round Metal Optics</a></td>
-          <td> <img src="glasses.png" style="width:150px;height:70px;"></img></td>
+          <td> <img src="glasses.png" style="width:160px;height:80px;"></img></td>
           <td>$210</td>
           <td>Size: <a style="color: firebrick;">50-21</a> | Frame: <a style="color: darkgreen;">Polished Matte Havanna On Matte Silver</a></td>
           <td><input type="checkbox" class ="big-checkbox" id="item4"></td>
@@ -77,11 +79,32 @@
           <td>Color: <a style="color: firebrick;">White Gold</a></td>
           <td><input type="checkbox" class ="big-checkbox" id="item5"></td>
       </tr>
+      <tr style="font-family: Apple; font-size:125%;">
+          <td>6. <a href="https://www.timberland.com/en-us/p/men/footwear-10039/mens-timberland-premium-6-inch-waterproof-boot-TB110061713?width=M">Timberland Premium 6-Inch Boot</a></td>
+          <td> <img src="timbs.png" style="width:200px;height:150px;"></img></td>
+          <td>$210</td>
+          <td>Color: <a style="color: firebrick;">Wheat</a> | Size: <a style="color: darkgreen;">8.5</a> | Width: <a style="color: firebrick;"> Medium</a> </td>
+          <td><input type="checkbox" class ="big-checkbox" id="item6"></td>
+      </tr>
+      <tr style="font-family: Apple; font-size:125%;">
+          <td>7. <a href="https://skims.com/products/skims-cotton-mens-5-inch-boxer-brief-3-pack-stone-multi">5" Boxer Brief 3-Pack</a></td>
+          <td> <img src="skims.png" style="width:200px;height:200px;"></img></td>
+          <td>$46</td>
+          <td>Color: <a style="color: firebrick;">Stone Multi</a> | Size: <a style="color: darkgreen;">Small</a></td>
+          <td><input type="checkbox" class ="big-checkbox" id="item7"></td>
+      </tr>
+      <tr style="font-family: Apple; font-size:125%;">
+          <td>8. <a href="https://golfwang.com/products/cherry-bomb-vinyl-blue">Cherry Bomb Vinyl</a></td>
+          <td> <img src="cherrybomb.png" style="width:230px;height:140px;"></img></td>
+          <td>$40</td>
+          <td>Color: <a style="color: firebrick;">Blue</a></td>
+          <td><input type="checkbox" class ="big-checkbox" id="item8"></td>
+      </tr>
   </table>
 
   <script>
     // IDs of all the inputs we want to persist
-    const fields = ["item1", "item2", "item3"];
+    const fields = ["item1", "item2", "item3", "item4", "item5", "item6", "item7", "item8"];
 
     // Load saved values
     window.addEventListener("DOMContentLoaded", () => {

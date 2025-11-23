@@ -8,35 +8,52 @@
     @font-face { font-family: LastChristmas; src: url('LastChristmas.otf'); } 
     @font-face { font-family: Apple; src: url('ITCBenguiatStdMediumCn.OTF'); }
     body {
-    background-image: url('xmaspattern.png');
-    }   
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(255,255,255,0)), url('xmaspattern.png');
+    background-repeat: no-repeat;
+    }
+
+    ul {
+        list-style-type: none; /* Changes bullets to squares */
+    }
+
     h1 {
     font-family: LastChristmas
     }
-    
 } 
 </style>
 <title>Trey Miller</title>
 </head>
 <body>
-  <h1 style=" color: darkgreen; text-align:center; font-size:500%;" >Trey's Christmas List!</h1>
+  <h1 style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); color: darkgreen; text-align:center; font-size:500%;" >Trey's Christmas List!</h1>
   
-  <p style=" text-align:center; font-family: Apple; font-size:150%;">
+  <p style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); color: white; text-align:center; font-family: Apple; font-size:150%;">
    Hello! I have built this web site to help you shop for me this holiday season! 
    Here you will find a list of items unique to each person. Simply select who you are
    in relation to me and you will be given your shopping list!
     Simply select who you are
    in relation to me and you will be given your shopping list!
   </p>
-  
-  <h2 style="color: firebrick; text-align:center; font-family: Apple;">
+
+  <h2 style="font-size:200%; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2); color: firebrick; text-align:center; font-family: Apple;">
     What is your relation to the gift that keeps on giving?
   </h2>
-  <p style="color: green; text-align:center; font-family: Apple;">
-    <label><input type="radio" name="relation" value="mother.html"> Mother</label>
-    <label><input type="radio" name="relation" value="father.html"> Father</label>
+  <p style="margin-bottom: 200px; text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); color: white; text-align:center; font-family: Apple;">
+    <label style="font-size: 150%; "><input type="radio" name="relation" value="mother.html"> Mother</label>
+    <label style="font-size: 150%;"><input type="radio" name="relation" value="father.html"> Father</label>
+      <label style="font-size: 150%;"><input type="radio" name="relation" value="girlfriend.html"> Girlfriend</label>
   </p>
    <div id="result"></div>
+
+  <h1 style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6); color: rgba(117, 155, 115, 1); text-align:center; font-size:350%;">stocking stuffers</h1>
+  <ul style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); text-align:center; font-family: Apple; font-size:150%;">
+      <li style="color: white;">Vinyls</li>
+      <li style="color: firebrick;">Stickers</li>
+      <li style="color: white;">Golf Stuff</li>
+      <li style="color: firebrick;">Arc'teryx Beanie</li>
+      <li style="color: white;">Steam Gift Card</li>
+      <li style="color: firebrick;">Anime Figures / Merch</li>
+      <li style="color: white;">Board Games / Card Games</li>
+  </ul>
 
   <script>
   const radioName = "relation"; // use the 'name' attribute shared by your radios

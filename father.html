@@ -2,22 +2,163 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<style type="text/css">
-table, th, td{
-    border: 1px solid black;
-    border-collapse: collapse;
-}
-</style>
-<title>Trey Miller</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+        @font-face { font-family: LastChristmas; src: url('LastChristmas.otf'); }
+        @font-face { font-family: Apple; src: url('ITCBenguiatStdMediumCn.OTF'); }
+
+        body {
+            background: radial-gradient(circle, rgba(126, 37, 37, 0.24) 40%, rgba(126, 37, 37, 0.5) 100%);
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-collapse: separate;  /* required for border-spacing to work */
+            border-spacing: 40px 10px;  /* horizontal vertical spacing */
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        th, td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .big-checkbox {
+            transform: scale(2); /* Increase size */
+            -webkit-transform: scale(2); /* Safari */
+            margin: 10px;
+        }
+
+        a:link {
+            color: rgba(49, 114, 71, 1);;       /* normal link */
+        }
+
+        a:visited {
+            color: rgba(49, 114, 71, 1);;     /* after it's clicked */
+        }
+
+        a:hover {
+            color: firebrick;      /* when mouse is over it */
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: green;        /* when clicked */
+        }
+
+    </style>
+    <title>Trey Miller</title>
 </head>
 <body>
-  <h1>Dad</h1>
-  
-  <p>
-   Hi dad!
-  </p>
- 
-  
+<div style="display: flex; align-items: center; justify-content: center;">
+    <img src="presents.png" alt="" style="height: 150px; margin-right: 50px;">
+
+    <h1 style="text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4); color: darkgreen; text-align:center; font-family: LastChristmas; font-size: 500%;">
+        Father's List
+    </h1>
+
+    <img src="snowman.png" alt="" style="height: 165px; margin-left: 50px;">
+</div>
+
+<table>
+    <tr style="text-decoration: underline; color: darkred; font-family: Apple; font-size:170%;">
+        <th>Item    </th>
+        <th>Image Of Item    </th>
+        <th>Cost    </th>
+        <th>Additional Info    </th>
+        <th>Bought?</th>
+    </tr>
+    <tr style="font-family: Apple; font-size:125%;">
+        <td>1. <a href="https://www.fanatics.com/nfl/jacksonville-jaguars/brian-thomas-jr-jacksonville-jaguars-nike-alternate-game-jersey-teal/o-2438+t-92601402+p-5711347679827+z-9-2940297312?_ref=p-ALP:m-GRID:i-r0c2:po-2&sku=206633530">Brian Thomas Jr. Jersey</a></td>
+        <td> <img src="btj.png" style="width:220px;height:220px;"></img></td>
+        <td>$130</td>
+        <td>Size: <a style="color: rgba(181, 66, 66, 1);">Small</a> | Style: <a style="color: darkgreen;">Prowler Throwback</a></td>
+        <td><input type="checkbox" class ="big-checkbox" id="d1"></td>
+    </tr>
+    <tr style="font-family: Apple; font-size:125%;">
+        <td>2. <a href="https://www.prada-beauty.com/fragrance/paradigme/paradigme-eau-de-parfum/MPL01826.html?dwvar_MPL01826_size=1.6oz_50ml">Paradigme Eau de Parfume</a></td>
+        <td> <img src="prada.png" style="width:130px;height:180px;"></img></td>
+        <td>$136</td>
+        <td>Size: <a style="color: rgba(181, 66, 66, 1);">1.60oz</a></td>
+        <td><input type="checkbox" class ="big-checkbox" id="d2"></td>
+    </tr>
+    <tr style="font-family: Apple; font-size:125%;">
+        <td>3. <a href="https://www.adidas.com/us/samba-og-shoes/IG9030.html">Samba OG Shoes</a></td>
+        <td> <img src="sambas.png" style="width:200px;height:105px;"></img></td>
+        <td>$100</td>
+        <td>Size: <a style="color: rgba(181, 66, 66, 1);">8.5</a>| Color: <a style="color: darkgreen;">White, Gum, & Black</a> </td>
+        <td><input type="checkbox" class ="big-checkbox" id="d3"></td>
+    </tr>
+    <tr style="font-family: Apple; font-size:125%;">
+        <td>4. <a href="https://www.hollisterco.com/shop/us/p/boxy-logo-quarter-zip-sweatshirt-61433320?categoryId=16418&faceout=model&seq=01&afsource=social+proofing&pagefm=navigation-grid&prodvm=navigation-grid">Boxy Logo Quarter-Zip</a></td>
+        <td> <img src="qz.png" style="width:210px;height:225px;"></img></td>
+        <td>$28</td>
+        <td>Size: <a style="color: rgba(181, 66, 66, 1);">Small</a> | Color: <a style="color: darkgreen;">Red</a></td>
+        <td><input type="checkbox" class ="big-checkbox" id="d4"></td>
+    </tr>
+    <tr style="font-family: Apple; font-size:125%;">
+        <td>5. <a href="https://www.hollisterco.com/shop/us/p/above-the-knee-fleece-shorts-61233322?categoryId=12551&faceout=model&seq=03&pagefm=navigation-grid&prodvm=navigation-grid">Above-the-Knee Fleece Shorts</a></td>
+        <td> <img src="shorts.png" style="width:200px;height:170px;"></img></td>
+        <td>$25</td>
+        <td>Size: <a style="color: rgba(181, 66, 66, 1);"> Small</a> | Color: <a style="color: darkgreen;">Heather Gray</a></td>
+        <td><input type="checkbox" class ="big-checkbox" id="d5"></td>
+    </tr>
+    <tr style="font-family: Apple; font-size:125%;">
+        <td>6. <a href="https://www.hollisterco.com/shop/us/p/logo-graphic-henley-61524840?categoryId=12556&faceout=model&seq=02&pagefm=navigation-grid&prodvm=navigation-grid">Holiday Vault Release Logo Graphic Henley</a></td>
+        <td> <img src="greenshirt.png" style="width:215px;height:220px;"></img></td>
+        <td>$40</td>
+        <td>Size: <a style="color: rgba(181, 66, 66, 1);"> Small</a> | Color: <a style="color: darkgreen;">Washed Green</a> </td>
+        <td><input type="checkbox" class ="big-checkbox" id="d6"></td>
+    </tr>
+    <tr style="font-family: Apple; font-size:125%;">
+        <td>7. <a href="https://www.hollisterco.com/shop/us/p/baggy-sweatpants-60471370?categoryId=12556&faceout=model&seq=19&afsource=social+proofing&pagefm=navigation-grid&prodvm=navigation-grid">Star Graphic Baggy Sweatpants</a></td>
+        <td> <img src="sweats.png" style="width:190px;height:280px;"></img></td>
+        <td>$50</td>
+        <td>Size: <a style="color: rgba(181, 66, 66, 1);"> Small</a> | Color: <a style="color: darkgreen;">Washed Dark Gray</a></td>
+        <td><input type="checkbox" class ="big-checkbox" id="d7"></td>
+    </tr>
+    <tr style="font-family: Apple; font-size:125%;">
+        <td>8. <a href="https://www.fanatics.com/college/ohio-state-buckeyes/ohio-state-buckeyes-nike-primetime-victory-striped-dri-fit-polo-black/white/o-16+t-46771180+p-5755997592439+z-8-2134900633?_ref=p-DLP:m-GRID:i-r5c1:po-16">Ohio State Dri-FIT Polo</a></td>
+        <td> <img src="osupolo.png" style="width:210px;height:240px;"></img></td>
+        <td>$53</td>
+        <td>Size: <a style="color: rgba(181, 66, 66, 1);"> Small</a> | Color: <a style="color: darkgreen;">Scarlet</a></td>
+        <td><input type="checkbox" class ="big-checkbox" id="d8"></td>
+    </tr>
+</table>
+
+<script>
+    // IDs of all the inputs we want to persist
+    const fields = ["d1", "d2", "d3", "d4", "d5", "d6", "d7", "d8"];
+
+    // Load saved values
+    window.addEventListener("DOMContentLoaded", () => {
+      fields.forEach(id => {
+        const el = document.getElementById(id);
+        const saved = localStorage.getItem(id);
+
+        if (el.type === "checkbox") {
+          el.checked = saved === "true";
+        } else if (saved !== null) {
+          el.value = saved;
+        }
+      });
+    });
+
+    // Save on change
+    fields.forEach(id => {
+      const el = document.getElementById(id);
+      el.addEventListener("input", () => {
+        if (el.type === "checkbox") {
+          localStorage.setItem(id, el.checked);
+        } else {
+          localStorage.setItem(id, el.value);
+        }
+      });
+    });
+</script>
+
+
 </body>
 </html>
